@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Running build automation'
 	sh './grandlew build --no-daemon'
-	ArchiveArtifacts artifacts: 'dist/trainSchedule.zip'
+	archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       }
     }
   }
